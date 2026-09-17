@@ -1,0 +1,33 @@
+
+.header .hamburgerMenu {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.listItem {
+     display: flex;
+     margin-left: 3rem;
+     margin-right: 3rem;
+     padding: 5px 10px;
+     text-transform: capitalize;
+     text-decoration-color: none;
+     /* color: white; */
+ }
+ 
+.listItem.active{
+background: #81CFD1;
+    /* color: gray; */
+    border-radius: 5px;
+ }
+
+.listItem:hover {
+ color: rgb(39, 46, 37)
+}

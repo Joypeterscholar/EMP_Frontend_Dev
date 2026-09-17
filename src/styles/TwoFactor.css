@@ -1,0 +1,78 @@
+.TwoFactor .loginContainer{
+    padding: 3rem 1rem;
+    border-radius: 0.5rem;
+}
+.TwoFactor .twofaImg{
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    /* margin-top: 4rem; */
+    margin-bottom: 1.5rem;
+}
+.TwoFactor .twofaImg{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.TwoFactor .txt{
+    text-align: center;
+    margin-bottom: 1.6rem;
+    color: #1D1D1D;
+}
+.TwoFactor h1{
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+.TwoFactor .inputWrapper,
+.TwoFactor .twofaBtn{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1.2rem;
+}
+.TwoFactor .inputWrapper p{
+    margin-bottom: 0.3rem;
+    font-weight: bolder;
+}
+.TwoFactor .inputWrapper input{
+        width: 100%;
+        display: block;
+        padding:0.5rem 0.5rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        outline: none;
+        border-radius: 5px;
+}
+.TwoFactor .twofaBtn button{
+        border: none;
+        outline: none;
+       border-radius: 5px;
+       cursor: pointer;
+       padding: 0.65rem 1.2rem;
+       width: 100%;
+       font-weight: bolder;
+       background-color: black;
+       border: 1px solid #0000000D;
+       color: white;
+}
+.TwoFactor .resendWrapper p{
+    color: #A3A1A1;
+    margin-left: 1rem;
+}
+.TwoFactor .resendWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+@media only screen and (max-height:658px){
+    .TwoFactor .Login .background2{
+        width: 100%;
+        height: 48rem;
+    }
+  
+}
+@media only screen and (max-width:458px){
+    .TwoFactor .inputWrapper,
+    .TwoFactor .twofaBtn{
+        width: 90%;
+    }
+  
+}

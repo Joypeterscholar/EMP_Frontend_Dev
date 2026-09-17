@@ -1,0 +1,56 @@
+
+#panel1bh-header{
+    box-shadow: none;    
+}
+.details{
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+.Accordionn{
+    height: auto;
+    width: 100%;
+}
+.Accordionn .heading{
+    width: 90%;
+    overflow: hidden;
+    height: 2.5rem;
+}
+#accordionWrapper::before{
+    background:none;
+    border-radius: 1rem;
+}
+.Accordionn .white{
+    color: black;
+}
+#panel1bh-content{
+    border-top: 1px solid black;
+    box-shadow: none;
+    color: black;
+    background-color: white;
+    /* box-shadow: 0px 0px 5px 1px rgb(226, 225, 225); */
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+.MuiCollapse-root{
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root{
+}
+#accordionWrapper{
+    border-radius: 2rem 2rem 0rem 0rem;
+    border-radius: 1rem ;
+    background-color:  rgba(0, 0, 0, 0.799);
+    background-color: white;
+    /* color: white; */
+    color:  black;
+    /* padding: 0rem; */
+    /* margin: 1.4rem 0rem; */
+}
+.Accordionn .active{
+    background-color:  black;
+
+}
+.info h3{
+    display: inline;
+}
+.info{
+    margin: 1rem 0rem;
+}

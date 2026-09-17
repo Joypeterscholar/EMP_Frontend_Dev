@@ -1,0 +1,42 @@
+.headerTop nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTop nav .hamburger {
+    display: none;
+}
+.headerTop nav .userInfo {
+    display: flex;
+    align-items: center;
+}
+.headerTop nav .hamburger {
+   width: 1.4rem;
+   height: 1.4rem;
+}
+nav .userInfo .img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.headerTop .backBtnWrapper {
+    margin-top: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+
+}
+.headerTop .backBtnWrapper .back {
+    margin-top: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.2rem;
+}
+.headerTop nav select {
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 1rem;
+}

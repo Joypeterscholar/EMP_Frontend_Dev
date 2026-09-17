@@ -1,0 +1,35 @@
+.loader{
+    width: 100%;
+    height: 28rem;
+    padding: 5rem;
+}
+.round{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 3px solid white;
+    border-top:3px solid blue;
+    margin: auto;
+    border-radius: 50%;
+    animation: round  350ms infinite both;
+    animation: round  590ms infinite both;
+  }
+  @keyframes round {
+    0% {
+      transform: rotate(0deg);
+    }
+    20%{
+      transform: rotate(70deg);
+    }
+    40%{
+      transform: rotate(120deg);
+    }
+    60%{
+      transform: rotate(220deg);
+    }
+    80%{
+      transform: rotate(290deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

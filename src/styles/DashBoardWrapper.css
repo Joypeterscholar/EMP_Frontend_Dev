@@ -1,0 +1,135 @@
+.DashBoardWrapper{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+.DashBoardWrapper .navigator .header,
+.DashBoardWrapper .navigatorMobile .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+     padding-top: 1.8rem; 
+     margin-bottom: 6rem;
+}
+.DashBoardWrapper .navigator{
+    width: 20vw;
+    height: 100vh;
+    background-color: #1E9FE7;
+    background-color: #363636;
+}
+.DashBoardWrapper .navigatorMobile{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1E9FE7;
+}
+.DashBoardWrapper .navigator .img,
+.DashBoardWrapper .navigatorMobile .img{
+    width: 8rem;
+    margin: auto;
+}
+.DashBoardWrapper .navigator .wrapper,
+.DashBoardWrapper .navigatorMobile .wrapper{
+    /* text-align: center; */
+    width: fit-content;
+    /* padding: 1rem; */
+    /* background-color: #131313; */
+    margin: auto;
+}
+.DashBoardWrapper a{
+    color: white;
+}
+.none{
+    display: none;
+}
+.DashBoardWrapper .navigator .wrapper p,
+.DashBoardWrapper .navigatorMobile .wrapper p{
+    margin: 2rem 0rem;
+    padding:0.4rem 0.6rem ;
+    /* padding: 1rem; */
+    cursor: pointer;
+}
+.DashBoardWrapper .navigator .wrapper ,
+.DashBoardWrapper .navigatorMobile .wrapper {
+    color: #DCDADA;
+    text-align: center;
+}
+.DashBoardWrapper .navigator .header .menu{
+    /* display: none; */
+    visibility: hidden;
+}
+.DashBoardWrapper .navigator .bottom,
+.DashBoardWrapper .navigatorMobile .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25vh;
+    text-align: center;
+    color: white;
+}
+.DashBoardWrapper .wrapper .active{
+    color: white;
+    /* background-color: white; */
+    border-radius: 1.1rem;
+}
+.DashBoardWrapper .container,
+.DashBoardWrapper .darkModeContainer{
+    width: 80vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+.DashBoardWrapper .container{
+    background-color: rgb(251, 249, 249);
+}
+.DashBoardWrapper .darkModeContainer{
+    background-color: #131313;
+    color:  rgb(239, 234, 234);
+}
+@media only screen and (max-width:968px){
+    .DashBoardWrapper .navigator{
+        width: 30vw;
+    }
+    .DashBoardWrapper .container,
+    .DashBoardWrapper .darkModeContainer{
+        width: 70vw;
+    }
+}
+@media only screen and (max-width:882px){
+    .DashBoardWrapper .navigatorMobile .header{
+        padding: 0.4rem 2rem;
+     padding-top: 1.8rem; 
+     margin-bottom: 6rem;
+    }
+    .DashBoardWrapper .navigator{
+        width: 100%;
+        position: absolute;
+        left: -100%;
+        transition: 1s;
+        height: 100vh;
+    }
+    .DashBoardWrapper .navigatorMobile{
+        position: absolute;
+        left: 0%;
+        height: 100vh;
+        transition: 1s;
+        background-color: #1E9FE7;
+    }
+    .DashBoardWrapper .container,
+    .DashBoardWrapper .darkModeContainer{
+        width: 100%;
+    }
+    .DashBoardWrapper .navigatorMobile .header .menu{
+        margin-top: -0.45rem;
+    }
+}
+@media only screen and (max-width:526px){
+
+    .DashBoardWrapper .navigatorMobile .header {
+       padding: 1.4rem 1rem;
+   }
+}
+@media only screen and (max-width:375px){
+    .DashBoardWrapper .navigatorMobile .header {
+       padding: 1.4rem 0.5rem;
+   }
+}

@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+
+  frontend:
+    container_name: emp-v2-fe
+    image: oriontechmen/env-v2-fe:dev
+    ports:
+      - "80:80"
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

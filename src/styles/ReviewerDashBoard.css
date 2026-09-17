@@ -1,0 +1,450 @@
+.ReviewerDashBoard{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.ReviewerDashBoard .threejsWrapper{
+    width: 70vw;
+    /* width: 100%; */
+    height: 100vh;
+    background-color: blanchedalmond;
+    position: relative;
+}
+.ReviewerDashBoard .threejsWrapper .menu{
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+}
+.ReviewerDashBoard .threejsWrapper .backContainer .img{
+    margin-bottom: -0.2rem;
+}
+.ReviewerDashBoard .threejsWrapper .backContainer{
+    display: flex;
+    align-items: center;
+    border-radius: 0rem 1rem 1rem 0rem;
+    background-color: white;
+    border: 1px solid rgb(169, 166, 166);
+    position: absolute;
+    top: 1rem;
+    width: fit-content;
+    padding:0.2rem 0.4rem;
+}
+
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper {
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 50%;
+   background-color: #D9D9D999;
+
+    /* width: 9rem; */
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* bottom: 2rem; */
+    left: 53%;
+    top: 90%;
+    transform: translate(-53%,-90%);
+    /* background-color: #0D5777; */
+    /* opacity: 0.4; */
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper .zoomImg{
+    font-size: 1.9rem;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding:0.1rem 0.7rem;
+   background-color: #69686580;
+   background-color: #D9D9D999;
+   opacity: 0.9; 
+}
+.ReviewerDashBoard .ctrlIcon{
+   color: #D9D9D999;
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 1.5rem;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper .controlContainer{
+    display: flex;
+    align-items: center;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper .separator{
+    height: 5rem;
+    width: 1px;
+    margin: 0rem 0.3rem;
+    background-color: white;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper .controlContainer .ctrlImg{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    margin: 0.5rem;
+    z-index: 40;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper .zoomContainer .ctrlImg{
+    padding: 0.2rem;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper .dimension .ctrlImg{
+    padding: 0.45rem;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper .buttonsWrapper .cameraContainer .ctrlImg{
+    padding: 0.3rem;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper button{
+    border: none;
+    outline: none;
+   cursor: pointer;
+   padding: 0.5rem;
+   color: black;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+
+}
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .nav,
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .up,
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .down{
+   padding: 0rem ;
+   background-color: rgb(51, 47, 47);
+   /* border: 2px solid white; */
+   border-radius: 5px;
+   margin: 0.4rem;
+}
+
+/* .ReviewerDashBoard .threejsWrapper .moveBtnWrapper .left{
+    width: 1.4rem; 
+    height: 1.4rem;
+} */
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .hide{
+    width: 1rem;
+    height: 1rem;
+    visibility: hidden;
+}
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .up,
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .down{
+    margin: auto;
+    width: fit-content;
+}
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* all data container */
+.ReviewerDashBoard .alldataWrapper,
+.ReviewerDashBoard .alldataWrapperMobile{
+    width: 30vw;
+    height: 100vh;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    background-color: #EEEEEE;
+    background-color: #F4F4F4;
+}
+/* header */
+.ReviewerDashBoard .dataWrapper .header .menuWrapper .menu {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.ReviewerDashBoard .dataWrapper .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* input */
+.ReviewerDashBoard .AllModels .searchBarContainer input {
+    padding: 0.6rem 0.5rem;
+
+}
+.ReviewerDashBoard .AllModels .searchBarContainer{
+    margin-top: 4rem;
+    padding: 0rem 0.3rem;
+    background-color: white;
+    /* box-shadow: 0px 2px 2px  0px rgba(0, 0, 0, 0.36); */
+    border: 1px solid #585858;
+    border: none;
+}
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter .img,
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter .clear{
+    margin: auto;
+ }
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter .clear{
+    margin-top: 0.65rem;
+ }
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter {
+    padding: 0rem;
+    width: 4.5rem;
+    height: 3rem;
+    background-color: white;
+    /* margin: auto; */
+    /* text-align: center; */
+ }
+
+ /* all info  */
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .allInfoContainer {
+    margin: 2rem auto;
+    padding: 1rem 0rem;
+ }
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .allInfoContainer .info {
+    margin: 0.4rem 0rem;
+}
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .allInfoContainer .info h3{
+    display: inline;
+    /* width: fit-content;
+    height: fit-content;
+    background-color: red; */
+}
+
+ .ReviewerDashBoard .btnContainer button,
+ .ReviewerDashBoard .confirmationModalWrapper .btnWrapper button{
+    width: 100%;
+    border: none;
+    outline: none;
+   cursor: pointer;
+   padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+.ReviewerDashBoard .btnContainer button{
+    margin-top: 0.45rem;
+    color: white;
+    background:black;
+}
+/* applied filter */
+.ReviewerDashBoard .dataWrapper .appliedFilterWrapper {
+    margin-top: 2rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterWrapper .cancelFilter{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: white;
+    padding: 0.35rem 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.5px solid rgba(0, 0, 0, 0.538);
+    padding: 0.4rem;
+    border-radius: 2rem;
+    width: 100%;
+    margin: auto;
+}
+                       
+
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer h3{
+    font-size: 0.8rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper .time,
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper .date{
+    font-size: 0.8rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer p{
+    font-size: 0.7rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .fromWrapper,
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .toWrapper,
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper{
+    display: flex;
+    align-items: center;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper{
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
+/* filter card */
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+   background-color: white;
+    /* box-shadow: 0px 0px 5px 1px rgb(226, 225, 225); */
+    border-radius: 1rem;
+    border: 0.5px solid #B0B0B0;
+    padding-bottom: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard .heading{
+   text-align: center;
+   padding: 0.6rem 0rem;
+   background:black;
+   color: white;
+   border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 1.4rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ReviewerDashBoard .dataWrapper .filterCard .inputContainer input{
+    width: 40%;
+    /* display: block; */
+    padding:0.2rem 0.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+    border: 1px solid #c2c4c44d;
+    background: rgb(241, 238, 238);
+    background-color: white;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .inputContainer :nth-child(1){
+    width: 46%;
+    padding:0.2rem 0.3rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .fromWrapper{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .fromWrapper h3{
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn button{
+    padding:0.8rem 0.3rem;
+    font-size: 1rem;
+    border: none;
+    width: 40%;
+    border-radius: 0.3rem;
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid #0D57774D;
+    cursor: pointer;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn .cancel{
+    background-color: white;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn .apply{
+   background:black;
+   color: white;
+}
+/* Accordion container */
+                           
+/* export video container */
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal h1{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal{
+    margin: auto;
+    margin-top: 11rem;
+    padding:1rem 0rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    width: 40%;
+    border-radius: 1rem;
+}
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal .cancel{
+    text-align: end;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+   color: #0D5777;
+   cursor: pointer;
+}
+.ReviewerDashBoard .confirmationModalWrapper{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.496);
+    /* background-color: #0D5777; */
+    top: 0%;
+}
+.ReviewerDashBoard .confirmationModalWrapper .btnWrapper{
+    margin: auto;
+    width: 90%;
+}
+.ReviewerDashBoard .confirmationModalWrapper .btnWrapper button{
+   padding: 0.76rem 0rem;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #0D5777;
+   border: 1px solid #0D5777;
+    border-radius: 2.56rem;
+    margin: 1.3rem 0rem;
+    background: none;
+}
+.ReviewerDashBoard .confirmationModalWrapper .btnWrapper button:hover{
+    background-color: #0D5777;
+    color: white;
+}
+
+/* export successful */
+    /* background-color:blue ; */
+.ReviewerDashBoard .confirmationModalWrapper .exportSuccessful .wrapper{
+    /* text-align: center;
+    width: 100%;
+    margin: auto; */
+    margin-top: 3.5rem;
+}
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal .exportWrapper .none{
+    background: none;
+    /* color: transparent; */
+}
+.ReviewerDashBoard .confirmationModalWrapper .exportSuccessful .img{
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+@media only screen and (max-width:1324px){
+    .ReviewerDashBoard .alldataWrapper,
+    .ReviewerDashBoard .alldataWrapperMobile{
+    width: 40vw;
+    height: 100vh;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    background-color: #EEEEEE;
+    background-color: #F4F4F4;
+    }
+    .ReviewerDashBoard .alldataWrapper{
+        width: 50%;
+        position: absolute;
+        right: -100%;
+        transition: 1s;
+        height: 100vh;
+    }
+    .ReviewerDashBoard .threejsWrapper{
+        width: 100vw;
+        height: 100vh;
+        background-color: blanchedalmond;
+        position: relative;
+    }
+    .ReviewerDashBoard .alldataWrapperMobile{
+        position: absolute;
+        right: 0%;
+        height: 100vh;
+        transition: 1s;
+    }
+}

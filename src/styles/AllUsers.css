@@ -1,0 +1,287 @@
+.AllUsers{
+}
+
+.AllUsers .searchBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 90%; */
+    border: 1px solid #858585;
+    /* padding-left: 0.5rem; */
+    border-radius: 2.2rem;
+}
+
+.AllUsers .searchBarContainer .img {
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+    /* margin-top: -0.25rem; */
+}
+
+.AllUsers .searchBarContainer .filter {
+    padding: 1rem 3.29rem;
+    height: 100%;
+    border-radius: 1.5rem;
+    background:black;
+    color: white;
+    cursor: pointer;
+    /* margin-left: auto; */
+}
+.AllUsers .searchBarContainer input {
+    width: 84%;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.AllUsers .addModel .img {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.2rem;
+}
+
+.AllUsers .addModel{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.AllUsers .addModel {
+    color: white;
+    background: black;
+}
+/* all users */
+.AllUsers main .AllUsersWrapper{
+    width: 90%;
+    margin: auto;
+}
+.AllUsers .recentlyUpdatedModels{
+    border: 1px solid #858585;
+    /* border: 1px solid #858585; */
+    padding: 0.6rem  1.2rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+}
+.AllUsers  .recentlyUpdatedModels,
+.AllUsers  .recentlyUpdatedModels .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.AllUsers  .recentlyUpdatedModels .wrapper .img{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.AllUsers  .recentlyUpdatedModels .wrapper .img img{
+    border-radius: 50%;
+}
+.AllUsers  .recentlyUpdatedModels .wrapper .modelInfo h3,
+.AllUsers  .recentlyUpdatedModels .wrapper .modelInfo p{
+    overflow: hidden;
+    width: 100%;
+    height: 1.7rem;
+}
+.AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+    margin-left: 1rem;
+    width: 11rem;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    height: 3.5rem;
+}
+
+.AllUsers .recentlyUpdatedModels select {
+    border: none;
+    outline: none;
+    background: none;
+    background-color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+.AllUsers  .recentlyUpdatedModels button{ 
+        width: 100%;
+        border: none;
+        outline: none;
+       cursor: pointer;
+       background-color: white;
+       padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        margin-right: 2rem;
+        color: black;
+        border: 1px solid black;
+}
+.AllUsers  .recentlyUpdatedModels .btnContainer{ 
+    display: flex;
+    align-items: center;
+}
+.AllUsers  .recentlyUpdatedModels .btnContainer .img{ 
+    height: 1.35rem;
+    width: 1.35rem;
+}
+@media only screen and (max-width:1071px){
+    .AllUsers .searchBarContainer input {
+        width: 81.5%;
+    }
+}
+@media only screen and (max-width:995px){
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        margin-left: 0.6rem;
+        width: 9rem;
+    }
+}
+@media only screen and (max-width:712px){
+    .AllUsers .searchBarContainer input {
+        width: 80.5%;
+    }
+}
+@media only screen and (max-width:609px){
+    .AllUsers .recentlyUpdatedModels{
+        padding: 0.6rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        margin-left: 0.3rem;
+    }
+}
+@media only screen and (max-width:590px){
+    .AllUsers  .recentlyUpdatedModels button{ 
+        width: 100%;
+       padding: 0.5rem;
+        margin-right: 1rem;
+    }
+    .AllUsers .recentlyUpdatedModels select {
+        padding: 0.3rem 0.1rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+@media only screen and (max-width:526px){
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        width: 8rem;
+    }
+    .AllUsers  .recentlyUpdatedModels button{ 
+       padding: 0.4rem;
+        margin-right: 0.6rem;
+    }
+}
+@media only screen and (max-width:499px){
+        .AllUsers .searchBarContainer .filter {
+            padding: 0.9rem 1.7rem;
+        }
+        .AllUsers .searchBarContainer input {
+            width: 73%;
+        }
+}
+@media only screen and (max-width:482px){
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        width: 7rem;
+    }
+    .AllUsers  .recentlyUpdatedModels button{ 
+       padding: 0.3rem;
+        margin-right: 0.6rem;
+    }
+    .AllUsers main .AllUsersWrapper{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:442px){
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        width: 6.6rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo h3{
+        font-size: 1.1rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo p{
+        font-size: 0.9rem;
+    }
+    .AllUsers  .recentlyUpdatedModels button{ 
+       padding: 0.3rem 0.2rem;
+        margin-right: 0.4rem;
+        font-size: 0.8rem;
+
+    }
+    .AllUsers .recentlyUpdatedModels select {
+        padding: 0.3rem 0rem;
+        font-size: 0.8rem;
+        margin-right: 0.3rem;
+    }
+}
+@media only screen and (max-width:402px){
+        .AllUsers .searchBarContainer .filter {
+            padding: 0.9rem 1.3rem;
+        }
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        width: 6rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo h3{
+        font-size: 1.05rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo p{
+        font-size: 0.8rem;
+    }
+    .AllUsers  .recentlyUpdatedModels button{ 
+        margin-right: 0.2rem;
+        font-size: 0.75rem;
+    }
+    .AllUsers .recentlyUpdatedModels select {
+        padding: 0.3rem 0rem;
+        margin-right: 0.1rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .img{
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .btnContainer img{ 
+        height: 1.1rem;
+        width: 1.1rem;
+    }
+}
+@media only screen and (max-width:371px){
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        width: 5.5rem;
+        margin-left: 0.18rem;
+    }
+    .AllUsers .recentlyUpdatedModels select {
+        width: 3.9rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media only screen and (max-width:341px){
+    .AllUsers  .recentlyUpdatedModels {
+        padding: 0.6rem 0.2rem;
+       
+    }
+
+}
+@media only screen and (max-width:334px){
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        width: 5rem;
+        margin-left: 0.18rem;
+    }
+}
+@media only screen and (max-width:318px){
+    .AllUsers  .recentlyUpdatedModels .wrapper .modelInfo{
+        width: 4rem;
+        margin-left: 0.18rem;
+    }
+    .AllUsers  .recentlyUpdatedModels .wrapper .img{
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+}

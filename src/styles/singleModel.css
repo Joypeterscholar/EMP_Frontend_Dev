@@ -1,0 +1,714 @@
+.ReviewerDashBoard{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.ReviewerDashBoard .threejsWrapper{
+    width: 70vw;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.ReviewerDashBoard .threejsWrapper .menu{
+    /* width: 2rem;
+    height: 2rem; */
+    margin-left: auto;
+}
+.ReviewerDashBoard .threejsWrapper .navigation .mobileMenu{
+    display: none;
+}
+.ReviewerDashBoard .threejsWrapper .threejsAnimationWrapper{
+    width: 100%;
+    height: 99.51%;
+    position: relative;
+}
+.ReviewerDashBoard .threejsWrapper .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    padding-right: 1rem;
+}
+.ReviewerDashBoard .threejsWrapper .backContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0rem 1rem 1rem 0rem;
+    background-color: white;
+    border: 1px solid rgb(169, 166, 166);
+    padding:0.2rem 0.4rem;
+}
+
+
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper {
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 50%;
+   background-color: #D9D9D999;
+}
+.ReviewerDashBoard .threejsWrapper .threejsControlWrapper{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 53%;
+    top: 90%;
+    transform: translate(-53%,-90%);
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper .zoomImg{
+    font-size: 1.9rem;
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding:0.1rem 0.3rem;
+   background-color: #69686580;
+   background-color: #D9D9D999;
+   opacity: 0.9; 
+   width: fit-content;
+}
+
+.ReviewerDashBoard .ctrlIcon{
+   color: #D9D9D999;
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 1.5rem;
+}
+
+.ReviewerDashBoard .threejsWrapper  .compassContainer{
+    width: 7rem;
+    height: 7rem;
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper .controlContainer{
+    display: flex;
+    align-items: center;
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper .separator{
+    height: 5rem;
+    width: 1px;
+    margin: 0rem 0.3rem;
+    background-color: white;
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper .controlContainer .ctrlImg{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    margin: 0.5rem;
+    z-index: 40;
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper .zoomContainer .ctrlImg{
+    padding: 0.2rem;
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper .dimension .ctrlImg{
+    padding: 0.45rem;
+}
+.ReviewerDashBoard .threejsWrapper  .buttonsWrapper .cameraContainer .ctrlImg{
+    padding: 0.3rem;
+}
+.ReviewerDashBoard .threejsWrapper  button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: black;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-left: 0.45rem;
+    margin-right: 0.6rem;
+
+}
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .nav,
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .up,
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .down{
+   padding: 0rem ;
+   background-color: rgb(51, 47, 47);
+   border-radius: 5px;
+}
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .hide{
+    width: 1.5rem;
+    height: 1.5rem;
+    visibility: hidden;
+    margin: 0.5rem;
+}
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .up,
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .down{
+    margin: auto;
+    width: fit-content;
+}
+.ReviewerDashBoard .threejsWrapper .moveBtnWrapper .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ReviewerDashBoard #threejsMobileControl{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%,-0%);
+    display: none;
+}
+/* all data container */
+.ReviewerDashBoard .alldataWrapper{
+    width: 40vw;
+}
+.ReviewerDashBoard .alldataWrapperMobile{
+    width: 40vw;
+    position: absolute;
+    left: -100%;
+}
+
+/* .ReviewerDashBoard .alldataWrapperMobile, */
+.ReviewerDashBoard .dataWrapper{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    background-color: #EEEEEE;
+    background-color: #F4F4F4;
+}
+/* header */
+.ReviewerDashBoard .dataWrapper .header .menuWrapper .menu{
+    /* width: 1.7rem;
+    height: 1.7rem; */
+}
+.ReviewerDashBoard .dataWrapper .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* input */
+.ReviewerDashBoard .AllModels .searchBarContainer input {
+    @apply pl-5
+}
+.ReviewerDashBoard .AllModels .searchBarContainer{
+    margin-top: 4rem;
+    padding: 0rem 0.3rem;
+    background-color: white;
+    /* box-shadow: 0px 2px 2px  0px rgba(0, 0, 0, 0.36); */
+    border: 1px solid #585858;
+    border: none;
+}
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter .img,
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter .clear{
+    margin: auto;
+ }
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter .clear{
+    margin-top: 0.65rem;
+ }
+ .ReviewerDashBoard .AllModels .searchBarContainer .filter {
+    padding: 0rem;
+    width: 4.5rem;
+    height: 3rem;
+    background-color: white;
+    color: black;
+ }
+
+ /* all info  */
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .allInfoContainer {
+    /* margin: 2rem auto;
+    padding: 1rem 0rem; */
+ }
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .allInfoContainer .info {
+    margin: 0.4rem 0rem;
+}
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .allInfoContainer .info h3{
+    display: inline;
+    /* width: fit-content;
+    height: fit-content;
+    background-color: red; */
+}
+
+ .ReviewerDashBoard .btnContainer button,
+ .ReviewerDashBoard .confirmationModalWrapper .btnWrapper button{
+    width: 100%;
+    border: none;
+    outline: none;
+   cursor: pointer;
+   padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+.ReviewerDashBoard .btnContainer button{
+    margin-top: 0.45rem;
+    color: white;
+    background:black;
+}
+/* applied filter */
+.ReviewerDashBoard .dataWrapper .appliedFilterWrapper {
+    margin-top: 2rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterWrapper .cancelFilter{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: white;
+    padding: 0.35rem 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterWrapper {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.5px solid rgba(0, 0, 0, 0.538);
+    padding: 0.4rem;
+    border-radius: 2rem;
+    width: 100%;
+    margin: auto;
+}
+                       
+
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer h3{
+    font-size: 0.8rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper .time,
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper .date{
+    font-size: 0.8rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer p{
+    font-size: 0.7rem;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .fromWrapper,
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .toWrapper,
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper{
+    display: flex;
+    align-items: center;
+}
+.ReviewerDashBoard .dataWrapper .appliedFilterContainer .wrapper{
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
+/* filter card */
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+   background-color: white;
+    border-radius: 1rem;
+    border: 0.5px solid #B0B0B0;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard .heading{
+   text-align: center;
+   /* padding: 0.6rem 0rem; */
+   background:black;
+   color: white;
+   border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer{
+    width: 100%;
+    margin: auto;
+    margin-top: 1.4rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ReviewerDashBoard .dataWrapper .filterCard .inputContainer input{
+    width: 40%;
+    padding:0.2rem 0.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+    border: 1px solid #c2c4c44d;
+    background: rgb(241, 238, 238);
+    background-color: white;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .inputContainer :nth-child(1){
+    width: 46%;
+    padding:0.2rem 0.3rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .fromWrapper{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .fromWrapper h3{
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn button{
+    padding:0.8rem 0.3rem;
+    font-size: 1rem;
+    border: none;
+    width: 40%;
+    border-radius: 0.3rem;
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid #0D57774D;
+    cursor: pointer;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn .cancel{
+    background-color: white;
+}
+.ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer .controlBtn .apply{
+   background:black;
+   color: white;
+}
+/* Accordion container */
+                           
+/* export video container */
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal h1{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal{
+    margin: auto;
+    margin-top: 11rem;
+    padding:1rem 0rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    width: 40%;
+    border-radius: 1rem;
+}
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal .cancel{
+    text-align: end;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+   color: #0D5777;
+   cursor: pointer;
+}
+.ReviewerDashBoard .confirmationModalWrapper{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.496);
+    /* background-color: #0D5777; */
+    top: 0%;
+}
+.ReviewerDashBoard .confirmationModalWrapper .btnWrapper{
+    margin: auto;
+    width: 90%;
+}
+.ReviewerDashBoard .confirmationModalWrapper .btnWrapper button{
+   padding: 0.76rem 0rem;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #0D5777;
+   border: 1px solid #0D5777;
+    border-radius: 2.56rem;
+    margin: 1.3rem 0rem;
+    background: none;
+}
+.ReviewerDashBoard .confirmationModalWrapper .btnWrapper button:hover{
+    background-color: #0D5777;
+    color: white;
+}
+
+/* export successful */
+    /* background-color:blue ; */
+.ReviewerDashBoard .confirmationModalWrapper .exportSuccessful .wrapper{
+    /* text-align: center;
+    width: 100%;
+    margin: auto; */
+    margin-top: 3.5rem;
+}
+.ReviewerDashBoard .confirmationModalWrapper .confirmationModal .exportWrapper .none{
+    background: none;
+    /* color: transparent; */
+}
+.ReviewerDashBoard .confirmationModalWrapper .exportSuccessful .img{
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+@media only screen and (max-width:1441px){
+    .ReviewerDashBoard .dataWrapper .appliedFilterWrapper {
+        width: 99%;
+    }
+}
+@media only screen and (max-width:1416px){
+    .ReviewerDashBoard .dataWrapper .filterCard .inputContainer input{
+        width: 40%;
+    }
+    .ReviewerDashBoard .dataWrapper .filterCard .filterInputContainer{
+        width: 90%;
+    }
+    .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+         width: 100%;
+     }
+}
+@media only screen and (max-width:1324px){
+    .ReviewerDashBoard .dataWrapper .appliedFilterWrapper,
+    .ReviewerDashBoard .AllModels .searchBarContainer{
+        width: 100%;
+    }
+    .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+         width: 100%;
+     }
+    .ReviewerDashBoard .alldataWrapper{
+        position: absolute;
+        right:100%;
+        height: 100vh;
+    }
+    .ReviewerDashBoard .threejsWrapper .navigation .mobileMenu{
+        display: block;
+    }
+    .ReviewerDashBoard .alldataWrapperMobile{
+        width: 40vw;
+        position: absolute;
+        left: 60%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width:1227px){
+    .ReviewerDashBoard .dataWrapper .header .menuWrapper .menu {
+        /* width: 1.4rem;
+        height: 1.4rem; */
+    }
+    .ReviewerDashBoard .dataWrapper .header h1{
+       font-size: 1.7rem;
+    }
+
+}
+@media only screen and (max-width:1145px){
+    .ReviewerDashBoard .dataWrapper .appliedFilterWrapper,
+    .ReviewerDashBoard .AllModels .searchBarContainer{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1051px){
+    .ReviewerDashBoard .alldataWrapperMobile{
+        width: 45vw;
+        position: absolute;
+        left: 55%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width:949px){
+    .ReviewerDashBoard .alldataWrapperMobile{
+        width: 55vw;
+        position: absolute;
+        left: 45%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width:812px){
+    .ReviewerDashBoard .alldataWrapperMobile{
+        width: 60vw;
+        position: absolute;
+        left: 40%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width:778px){
+    .ReviewerDashBoard .ctrlIcon{
+         font-size: 1.5rem;
+     }
+    .ReviewerDashBoard .moveBtnWrapper .middle .hide{
+       width: 1rem;
+       height: 1rem;
+     }
+     .ReviewerDashBoard .threejsWrapper .compassContainer{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .separator{
+        height: 4rem;
+        margin: 0rem 0.3rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper{
+        padding: 0.1rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .controlContainer .ctrlImg{
+        border: 1px solid white;
+        margin: 0.1rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .zoomContainer .zoomImg{
+        font-size: 1.6rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .zoomContainer .ctrlImg{
+        padding: 0.1rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .dimension .ctrlImg{
+        padding: 0.25rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .cameraContainer .circle,
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .cameraContainer .camera{
+        font-size: 1.2rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .cameraContainer .ctrlImg{
+        padding: 0.3rem;
+    }
+    .ReviewerDashBoard .threejsWrapper button{
+       padding:0.3rem 0.2rem;
+        font-size: 0.85rem;
+        margin-left: 0.1rem;
+        margin-right: 0.35rem;
+    }
+}
+@media only screen and (max-width:724px){
+    .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+         /* width: 85%; */
+     }
+}
+@media only screen and (max-width:688px){
+    .ReviewerDashBoard .dataWrapper .appliedFilterWrapper,
+    .ReviewerDashBoard .AllModels .searchBarContainer{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:636px){
+    .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+         /* width: 90%; */
+     }
+}
+@media only screen and (max-width:625px){
+    .ReviewerDashBoard .alldataWrapperMobile{
+        width: 70vw;
+        position: absolute;
+        left: 30%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width:588px){
+        .ReviewerDashBoard .alldataWrapperMobile{
+            width: 100vw;
+            position: absolute;
+            left: 0%;
+            height: 100%;
+        }
+        .ReviewerDashBoard .dataWrapper .appliedFilterWrapper {
+            width: 80%;
+        }
+        .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+            /* width: 65%; */
+        }
+    .ReviewerDashBoard .threejsWrapper .moveBtnWrapper {
+        padding: 0.5rem;
+    }
+    .ReviewerDashBoard .ctrlIcon{
+         font-size: 1.35rem;
+         margin-top: -0.8rem;
+         margin-bottom: -0.15rem;
+     }
+    .ReviewerDashBoard .moveBtnWrapper .middle .hide{
+       width: 1rem;
+       height: 1rem;
+     }
+     .ReviewerDashBoard .threejsWrapper .compassContainer{
+        width: 5.45rem;
+        height: 5.45rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .separator{
+        height: 4rem;
+        margin: 0rem 0.3rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper{
+        padding: 0rem 0.1rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .controlContainer .ctrlImg{
+        border: 1px solid white;
+        margin: 0.1rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .zoomContainer .zoomImg{
+            font-size: 1.5rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .zoomContainer .ctrlImg{
+        padding: 0.08rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .dimension .ctrlImg{
+        padding: 0.2rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .cameraContainer .circle,
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .cameraContainer .camera{
+        font-size: 1.2rem;
+    }
+    .ReviewerDashBoard .threejsWrapper .buttonsWrapper .cameraContainer .ctrlImg{
+        padding:0.18rem 0.25rem;
+    }
+    .ReviewerDashBoard .threejsWrapper button{
+       padding:0.3rem 0.2rem;
+        font-size: 0.85rem;
+        margin-left: 0.1rem;
+        margin-right: 0.35rem;
+    }
+}
+@media only screen and (max-width:550px){
+    .ReviewerDashBoard .threejsWrapper  .buttonsWrapper{
+       display: none;
+    }
+    .ReviewerDashBoard .threejsWrapper .threejsControlWrapper{
+        justify-content: space-between;
+        padding: 0rem 1rem;
+        left: 53%;
+        top: 87%;
+        transform: translate(-53%,-87%);
+    }
+    .ReviewerDashBoard #threejsMobileControl{
+        display: flex;
+    }
+    .ReviewerDashBoard .threejsWrapper  button{
+       padding: 0.5rem 0rem;
+        margin-left: 0.1rem;
+        margin-right: 0.25rem;
+        width: 4.3rem;
+    }
+}
+@media only screen and (max-width:497px){
+    .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+        /* width: 75%; */
+    }
+}
+@media only screen and (max-width:463px){
+    .ReviewerDashBoard .dataWrapper .appliedFilterWrapper {
+        width: 95%;
+    }
+}
+@media only screen and (max-width:425px){
+    .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:406px){
+    .ReviewerDashBoard .dataWrapper .appliedFilterWrapper {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:362px){
+    .ReviewerDashBoard .dataWrapper .dataHistoryWrapper .filterCard{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:310px){
+    .ReviewerDashBoard #threejsMobileControl  button{
+        padding: 0.3rem 0rem;
+         margin-left: 0rem;
+         margin-right: 0.25rem;
+         width: 3.4rem;
+         font-size: 0.75rem;
+     }
+}

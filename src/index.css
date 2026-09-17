@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	/* Typography Classes with Segoe UI Font Family */
+	/* 101px */
+	.heading-very-large-x {
+		font-weight: 900;
+		font-size: 6.3125rem; /* 101px */
+		line-height: 2.5rem; /* 40px */
+	}
+	.heading-xLarge-x {
+		font-weight: 900;
+		font-size: 4.375rem; /* 70px */
+		line-height: 2.5rem; /* 40px */
+	}
+	.heading-xLarge {
+		font-weight: 700;
+		font-size: 3rem; /* 48px */
+		line-height: 2.5rem; /* 40px */
+	}
+	.heading-large-x {
+		font-weight: 700;
+		font-size: 2.25rem; /* 36px */
+		line-height: 2.5rem; /* 40px */
+	}
+	.heading-large-sm {
+		font-weight: 700;
+		font-size: 2.0625rem; /* 33px */
+		line-height: 2.5rem; /* 40px */
+	}
+	.heading-large {
+		font-weight: 700;
+		font-size: 1.875rem; /* 30px */
+		line-height: 2.27rem; /* 36.31px */
+	}
+	.heading-regular {
+		font-weight: 700;
+		font-size: 1.5625rem; /* 25px */
+		line-height: 2.27rem; /* 36.31px */
+	}
+	.heading-medium {
+		font-size: 1.25rem; /* 20px */
+		font-weight: 700;
+		line-height: 1.5125rem; /* 24.2px */
+	}
+	.text-bold-x {
+		font-size: 1.125rem; /* 18px */
+		font-weight: 700;
+		line-height: 1.134375rem; /* 18.15px */
+	}
+	.text-bold {
+		font-size: 1rem; /* 16px */
+		font-weight: 700;
+		line-height: 1.134375rem; /* 18.15px */
+	}
+	.text-medium {
+		font-size: 0.9375rem; /* 15px */
+		font-weight: 400;
+		line-height: 1.071875rem; /* 17.15px */
+	}
+	.text-regular {
+		font-size: 0.875rem; /* 14px */
+		font-weight: 400;
+		line-height: 1.009375rem; /* 16.15px */
+	}
+	.text-small {
+		font-size: 0.75rem; /* 12px */
+		font-weight: 400;
+		line-height: 1.009375rem; /* 16.15px */
+	}
+	.text-small-xs {
+		font-size: 0.625rem; /* 10px */
+		font-weight: 400;
+		line-height: 0.875rem; /* 14px */
+	}
+
+	/* Sidebar text truncation */
+	.sidebar-text-truncate {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: 100%;
+	}
+}
+
+@layer base {
+	:root {
+		/* emp Color Scheme */
+		--emp-color-primary: #2d1b3d;
+		--emp-color-secondary: #30263b;
+		--emp-color-secondary-alt: #8b5cf6;
+		--emp-color-secondary-alt-2: #6e59a5;
+		--emp-color-tertiary: #9a55e8;
+		--emp-color-accent: #eb4898;
+		--emp-color-accent-alt: #3c2d4c;
+		--emp-color-dark: #2d1b3d;
+		--emp-color-light-primary: #f2b8d9;
+		--emp-color-light-secondary: #ddb8f4;
+		--emp-color-light-tertiary: #cdaaf4;
+		--emp-color-danger: #ef4444;
+		--emp-color-light-danger: #fef2f2;
+		--emp-color-warning: #f59e0b;
+		--emp-color-success: #10b981;
+		--emp-color-white: #ffffff;
+		--emp-color-black: #000000;
+		--emp-color-hover: #d149a5;
+		--emp-color-grey: #f5f5f5;
+		--emp-color-light-grey: #e5e7eb;
+		--emp-color-dark-grey: #6b7280;
+		--emp-color-lighter-grey: #f9fafb;
+		--emp-color-background: #fefefe;
+		--emp-color-surface: #ffffff;
+		--emp-color-text-primary: #1f2937;
+		--emp-color-text-secondary: #6b7280;
+		--emp-color-border: #e5e7eb;
+		--emp-color-shadow: rgba(45, 27, 61, 0.1);
+
+		/* Shadcn Tooltip Variables */
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+
+		/* Additional Shadcn UI colors for calendar and input */
+		--muted: 210 40% 98%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+		--accent: 210 40% 98%;
+		--accent-foreground: 222.2 84% 4.9%;
+		--ring: 222.2 84% 4.9%;
+		--background: 0 0% 100%;
+		--foreground: 222.2 84% 4.9%;
+	}
+
+	/* Dark mode colors (optional - can be implemented later) */
+	.dark {
+		--emp-color-background: #1a1a1a;
+		--emp-color-surface: #2d1b3d;
+		--emp-color-text-primary: #ffffff;
+		--emp-color-text-secondary: #d1d5db;
+		--emp-color-border: #374151;
+		--emp-color-shadow: rgba(0, 0, 0, 0.3);
+
+		/* Dark mode tooltip colors */
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
+
+		/* Dark mode calendar and input colors */
+		--muted: 222.2 84% 4.9%;
+		--muted-foreground: 215 20.2% 65.1%;
+		--accent: 222.2 84% 4.9%;
+		--accent-foreground: 210 40% 98%;
+		--ring: 212.7 26.8% 83.9%;
+		--background: 222.2 84% 4.9%;
+		--foreground: 210 40% 98%;
+	}
+
+	html {
+		font-family: "Roboto", sans-serif;
+		line-height: 1.5;
+		font-weight: 400;
+
+		font-synthesis: none;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+/* -------------------- */
+/* Global Reset         */
+/* -------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* overflow: hidden;  Uncomment if you actually want to hide scrollbars */
+}
+
+/* Ensure Recharts tooltips overlay charts in all builds */
+.recharts-wrapper,
+.recharts-responsive-container {
+	overflow: visible !important;
+}
+
+.recharts-tooltip-wrapper {
+	z-index: 9999 !important;
+	pointer-events: none;
+}

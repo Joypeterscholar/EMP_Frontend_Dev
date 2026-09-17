@@ -1,0 +1,55 @@
+.UserAddedSuccessfully .menuWrapper{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    visibility: hidden;
+}
+.UserAddedSuccessfully .menu{
+    width: 1.7rem;
+    height: 1.7rem;
+ }
+.UserAddedSuccessfully .darkModeMenu{
+    width: 1.4rem;
+    height: 1.4rem;
+ }
+.UserAddedSuccessfully .wrapper .img{
+    width: 7rem;
+    margin: auto;
+}
+.UserAddedSuccessfully .wrapper{
+    width: 100%;
+    text-align: center;
+    margin: 11rem 0rem;
+}
+.UserAddedSuccessfully .wrapper h1{
+    margin-top: 2rem;
+}
+.UserAddedSuccessfully .backBtnWrapper{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    margin-top: 1rem;
+    
+}
+.UserAddedSuccessfully .backBtnWrapper .back{
+    margin-top: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.2rem;
+}
+@media only screen and (max-width:882px){
+    .UserAddedSuccessfully .menuWrapper{
+        visibility: visible;
+    }
+    .UserAddedSuccessfully .wrapper{
+        width: 100%;
+        text-align: center;
+        margin: 7rem 0rem;
+    }
+}
+@media only screen and (max-height:519px){
+    .UserAddedSuccessfully .backBtnWrapper {
+      margin-bottom: 4rem;
+    }
+}

@@ -1,0 +1,574 @@
+.AllModels{
+}
+/* main */
+
+
+.AllModels .addModel {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.AllModels .addModel {
+    color: white;
+    background: black;
+}
+
+.AllModels .removeModel {
+    border: 1px solid #b41206;
+    display: flex;
+        align-items: center;
+        padding: 1rem 1rem;
+        border-radius: 1.5rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    
+}
+.add{
+background-color: #b41206;
+}
+.AllModels .deleteModeWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.AllModels .backBtnWrapper{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: 1rem;
+}
+.AllModels .backBtnWrapper .back{
+    margin-top: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.2rem;
+}
+
+/* search */
+.AllModels .searchBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding-left: 0.4rem;
+    border-radius: 2.2rem;
+}
+
+.AllModels .searchBarContainer .img {
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+    margin-top: -0.25rem;
+}
+
+.AllModels .searchBarContainer .filter {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 2.2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.AllModels .searchBarContainer .filter .img {
+    margin-right: 0.3rem;
+    margin-bottom: -0.3rem;
+}
+
+.AllModels .searchBarContainer input {
+    width: 90%;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* model cards */
+.AllModels .allModelsWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0rem;
+}
+.AllModels .allModelsWrapper .modelCard {
+    padding: 0.6rem;
+    border-radius: 1rem;
+    margin: 1rem 0.8rem;
+    box-shadow: 0px 0.6px 0px 1px #b2b0b0;
+    background-color: white;  
+}
+
+.AllModels .allModelsWrapper .modelCard .img{
+    width: 18rem;
+    height: 14rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.opacity{
+    background-color: rgb(45, 40, 40);
+    opacity: 0.8;
+}
+.AllModels .allModelsWrapper .modelCard .btnContainer button{
+    margin-top: 0.45rem;
+    width: 100%;
+    border: none;
+    outline: none;
+   border-radius: 5px;
+   cursor: pointer;
+   padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+.AllModels .allModelsWrapper .modelCard .viewModelBtn button{
+    color: white;
+    background: black;
+}
+.AllModels .allModelsWrapper .modelCard .updateModelBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+    width: 85%;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+}
+  .AllModels .allModelsWrapper .modelCard .checkbox {
+        text-align: end;
+        margin-right: 0.5rem;
+        padding-top: 0.5rem;
+  }
+  .AllModels .allModelsWrapper .modelCard label:before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-right: 10px; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 1px; */
+    background-color: rgb(223, 217, 217);
+    border: 1px solid rgb(152, 150, 150);
+    cursor: pointer;
+    /* box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); */
+  }
+  
+  .AllModels .allModelsWrapper .modelCard input[type=checkbox] {
+    display: none;
+  }
+  .AllModels .allModelsWrapper .modelCard .checkbox label:before {
+    border-radius: 1rem;
+  }
+  
+  .AllModels .allModelsWrapper .modelCard input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0,); */
+    /* font-size: 1rem; */
+    color: #fff;
+    background-color: #0D5777;
+    /* background-color: rgb(247, 244, 244); */
+    text-align: center;
+      /* line-height: 12px; */
+  }
+.AllModels .allModelsWrapper .modelCard .conntrolWrapper {
+    padding-top: 0.6rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.AllModels .allModelsWrapper .modelCard .delImg {
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 0.6rem;
+    padding-top: 0.5rem;
+    border:1px solid  black;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* navigaton btn */
+
+ .navigatonBtnContainer{
+    /* margin-bottom: 4rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .navigatonBtnContainer div{
+    margin: 0rem 0.6rem;
+    padding:0.25rem 0.65rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+ .navigatonBtnContainer .active{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+
+}
+/* confirmation modal */
+.AllModels .confirmationModalWrapper .confirmationModal h1{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.AllModels .confirmationModalWrapper .confirmationModal{
+    margin: auto;
+    margin-top: 11rem;
+    padding: 1.6rem 2rem;
+    background-color: white;
+    width: 40%;
+    border-radius: 1rem;
+}
+.AllModels .confirmationModalWrapper{
+    width: 80vw;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.496);
+    top: 0%;
+    right: 0;
+}
+.AllModels .confirmationModalWrapper .btnWrapper button{
+    margin-top: 0.45rem;
+    border: none;
+    outline: none;
+   border-radius: 5px;
+   cursor: pointer;
+   padding: 0.5rem 3rem;
+   background-color: white;
+    border-radius: 1rem;
+}
+.AllModels .confirmationModalWrapper .btnWrapper .Yes:hover{
+    color:  white;
+    background-color: #0D5777;
+}
+.AllModels .confirmationModalWrapper .btnWrapper .Yes{
+    color:  #0D5777;
+    border: 1px solid  #0D5777;
+}
+.AllModels .confirmationModalWrapper .btnWrapper .No:hover{
+    border: 1px solid  red;
+}
+.AllModels .confirmationModalWrapper .btnWrapper .No{
+    background-color: red;
+    color: white;
+}
+.AllModels .confirmationModalWrapper .btnWrapper{
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* dark mode styling */
+.darkModeContainer .AllModels .removeModel {
+    border: 1px solid white;
+    color: white;
+}
+.darkModeContainer .AllModels .searchBarContainer input{
+    color: white;
+}
+.darkModeContainer .AllModels .allModelsWrapper .modelCard {
+    box-shadow: 0px 0.6px 0px 1px #525151;
+    background-color: white;  
+}
+.darkModeContainer .AllModels .confirmationModalWrapper .confirmationModal{
+    background-color: #373333;  
+}
+.darkModeContainer .AllModels .confirmationModalWrapper .confirmationModal .btnWrapper .yes{
+    color:  white;
+    background-color: #0D5777;
+}
+.darkModeContainer .AllModels .confirmationModalWrapper .btnWrapper :nth-child(1){
+    color:  white;
+    background-color: #0D5777;
+}
+.darkModeContainer .AllModels .confirmationModalWrapper .btnWrapper :nth-child(2){
+    color:  white;
+    background-color: red;
+}
+@media only screen and (max-width:1331px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 0.3rem 0.8rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal{
+        width: 50%;
+    }
+    .AllModels .allModelsWrapper .modelCard .img{
+        width: 17rem;
+        height: 13rem;
+    }
+}
+@media only screen and (max-width:1267px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 1rem 2rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .img{
+        width: 19rem;
+        height: 14rem;
+    }
+}
+@media only screen and (max-width:1053px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 1rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:970px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 1rem 0.5rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .img{
+        width: 16rem;
+        height: 12rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal{
+        width: 70%;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal h1{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width:968px){
+    .AllModels .confirmationModalWrapper{
+        width: 70vw;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 85%;
+    }
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 2.1rem;
+        height: 2.1rem;
+        padding: 0.4rem;
+        padding-top: 0.4rem;
+    }
+}
+@media only screen and (max-width:882px){
+    .AllModels .confirmationModalWrapper{
+        width: 100vw;
+    }
+    .AllModels nav .menu{
+        visibility: visible;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal h1{
+        font-size: 1.8rem;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+}
+@media only screen and (max-width:872px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width:642px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 1rem ;
+    }
+    .AllModels .allModelsWrapper .modelCard .img{
+        width: 15rem;
+        height: 11rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal h1{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:614px){
+     .navigatonBtnContainer div{
+        margin: 0rem 0.5rem;
+        padding:0.35rem 1rem;
+    }
+}
+@media only screen and (max-width:591px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 1rem 0.6rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .img{
+        width: 14rem;
+        height: 10rem;
+    }
+    .AllModels .searchBarContainer input {
+        padding: 0.5rem 0.6rem;
+        width: 80%;
+    }
+    .AllModels .addModel,
+    .AllModels .removeModel {
+        padding: 0.6rem 0.9rem;
+        margin-right: 0.6rem;
+        font-size: 0.95rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 83%;
+    }
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 2rem;
+        height: 2rem;
+        padding: 0.5rem;
+        padding-top: 0.35rem;
+    }
+}
+@media only screen and (max-width:565px){
+    .AllModels .confirmationModalWrapper .confirmationModal{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:526px){
+    .AllModels .allModelsWrapper .modelCard {
+        margin: 1rem 2%;
+        width: 45%;
+    }
+    .AllModels .allModelsWrapper .modelCard .img{
+        width: 100%;
+        height: 9rem;
+    }
+    .AllModels nav {
+        padding: 0rem 1rem;
+    }
+}
+@media only screen and (max-width:511px){
+     .navigatonBtnContainer div{
+        margin: 0rem 0.4rem;
+        padding:0.3rem 0.8rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 81%;
+    }
+    
+}
+@media only screen and (max-width:455px){
+    .AllModels .allModelsWrapper .modelCard .img{
+        height: 8rem;
+    }
+    .AllModels .searchBarContainer .searchImg {
+        width: 1.5rem;
+        height: 1.3rem;
+        margin-top: -0.25rem;
+    }
+    .AllModels .searchBarContainer .filter .img {
+        width: 1rem;
+        margin-top: 0.1rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal {
+        padding:2rem 1rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal h1{
+        font-size: 1.65rem;
+    }
+    .AllModels .confirmationModalWrapper .btnWrapper button{
+        padding: 0.5rem 2rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 80%;
+    }
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 1.9rem;
+        height: 1.9rem;
+        padding: 0.4rem;
+        padding-top: 0.3rem;
+    }
+}
+@media only screen and (max-width:407px){
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 78%;
+    }
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 1.8rem;
+        height: 1.8rem;
+        padding: 0.35rem;
+        padding-top: 0.2rem;
+    }
+}
+@media only screen and (max-width:392px){
+    .AllModels .allModelsWrapper .modelCard .img{
+        height: 7.3rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal {
+        width: 90%;
+        padding:2rem 0.5rem;
+    }
+    .AllModels .confirmationModalWrapper .confirmationModal h1{
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+    }
+}
+@media only screen and (max-width:375px){
+    .AllModels .allModelsWrapper .modelCard .btnContainer button{
+        padding: 0.4rem;
+    }
+    .AllModels nav {
+        padding: 0rem 0.5rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        font-size: 0.78rem;
+    }
+}
+
+@media only screen and (max-width:362px){
+    .AllModels .allModelsWrapper .modelCard .img{
+        height: 6.8rem;
+    }
+}
+@media only screen and (max-width:394px){
+     .navigatonBtnContainer div{
+        margin: 0rem 0.3rem;
+        padding:0.2rem 0.6rem;
+    }
+}
+
+@media only screen and (max-width:343px){
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 1.6rem;
+        height: 1.6rem;
+        padding: 0.3rem;
+        padding-top: 0.15rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 75%;
+    }
+}
+@media only screen and (max-width:334px){
+     .navigatonBtnContainer div{
+        margin: 0rem 0.2rem;
+        padding:0.2rem 0.45rem;
+    }
+}
+@media only screen and (max-width:319px){
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.3rem;
+        padding-top: 0.1rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 75%;
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width:293px){
+    .AllModels .allModelsWrapper .modelCard .delImg {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.3rem;
+        padding-top: 0.1rem;
+    }
+    .AllModels .allModelsWrapper .modelCard .updateModelBtn button{
+        width: 72%;
+        font-size: 0.66rem;
+    }
+}

@@ -1,0 +1,218 @@
+.AddModelData{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+.AddModelData .modelWrapper{
+    width: 75vw;
+    height: 100vh;
+    background: url('../../public/img/pexels-andrew-neel-8960464\ 2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.AddModelData .backBtnWrapper p{
+    color: black;
+}
+.AddModelData .backBtnWrapper{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.AddModelData .backBtnWrapper .back{
+    margin-top: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.2rem;
+}
+.AddModelData .modelInfoWrapper{
+    width: 25vw;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 3rem 1rem;
+    padding-bottom: 7rem;
+    border-left: 1px solid rgb(225, 223, 223);
+    background-color: rgb(251, 249, 249);
+    background-color: #f1f1f1;
+}
+.AddModelData .modelInfoWrapper h1{
+    color:#0D5777;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.AddModelData .modelInfoWrapper .inputWrapper{
+    margin: 2rem 0rem;
+}
+.AddModelData .modelInfoWrapper .customTagWrapper{
+    background-color: #e4e0e0;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+
+}
+.AddModelData .modelInfoWrapper .customTagWrapper input,
+.AddModelData .modelInfoWrapper .customTagWrapper select{
+    margin: 2rem auto;
+}
+.AddModelData .modelInfoWrapper .inputWrapper p,
+.AddModelData .modelInfoWrapper #fileupload2 p{
+    margin-left: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+.AddModelData .modelInfoWrapper .inputWrapper input,
+.AddModelData .modelInfoWrapper .inputWrapper select,
+.AddModelData .modelInfoWrapper .inputWrapper textarea,
+.AddModelData .modelInfoWrapper .inputWrapper button,
+.AddModelData .modelInfoWrapper  .myui-button,
+.AddModelData .modelInfoWrapper .btnContainer button{
+    width: 100%;
+    display: block;
+    padding:0.7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid #acaaaa;
+    background: rgb(241, 238, 238);
+    background-color: white;
+}
+.AddModelData .modelInfoWrapper .inputWrapper textarea{
+    height: 9rem;
+    resize: none;
+    border-radius: 8px;
+}
+.AddModelData .modelInfoWrapper .inputWrapper select{
+    padding-left: 0.3rem;
+}
+#fileupload2 input{
+    opacity: 0.0;
+    width: 1rem;
+    cursor: pointer;
+}
+.AddModelData .modelInfoWrapper .btnContainer {
+    margin: 2.5rem 0rem;
+
+}
+.AddModelData .modelInfoWrapper .customData button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1.5rem 0rem;
+}
+
+.AddModelData .modelInfoWrapper .allBtnWrapper {
+    margin-top: 5rem;
+}
+.AddModelData .modelInfoWrapper .viewModelBtn button,
+.AddModelData .modelInfoWrapper .inputWrapper button{
+    color: white;
+    background:black;
+    padding: 0.9rem 0.3rem;
+}
+.AddModelData .modelInfoWrapper .updateModelBtn button{
+    color: black;
+    border: 1px solid black;
+    padding: 0.9rem 0.3rem;
+    background-color: white;
+}
+.AddModelData .modelInfoWrapper .updateModelBtn,
+.AddModelData .modelInfoWrapper .viewModelBtn {
+    margin: 1rem 0rem;
+}
+.AddModelData .confirmationModalWrapper .confirmationModal{
+    margin: auto;
+    margin-top: 11rem;
+    padding:1rem 0rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    width: 40%;
+    border-radius: 1rem;
+}
+.AddModelData .confirmationModalWrapper{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.496);
+    /* background-color: #0D5777; */
+    top: 0%;
+}
+
+/* dark mode styling */
+.AddModelDataContainerDark .AddModelData .modelInfoWrapper{
+    background-color: #131313;
+
+}
+.AddModelDataContainerDark .AddModelData .modelInfoWrapper .inputWrapper input,
+.AddModelDataContainerDark .AddModelData .modelInfoWrapper .inputWrapper select,
+.AddModelDataContainerDark .AddModelData .modelInfoWrapper  .myui-button{
+    border: 1px solid #525151;
+    background-color: #373333; 
+    color: white; 
+}
+.AddModelDataContainerDark .AddModelData .modelInfoWrapper  h1{
+    color: white;
+}
+.AddModelDataContainerDark .AddModelData .modelInfoWrapper .inputWrapper p,
+.AddModelDataContainerDark .AddModelData .modelInfoWrapper #fileupload2 p{
+    color: white;
+    margin-bottom: 0.3rem;
+}
+.AddModelDataContainerDark .AddModelData .backBtnWrapper p{
+    color: white;
+}
+@media only screen and (max-width:1181px){
+     .AddModelData .modelInfoWrapper  h1{
+        font-size: 1.9rem;
+    }
+    .AddModelData .modelInfoWrapper{
+        padding: 3rem 0.8rem;
+        padding-bottom: 7rem;
+    }
+}
+@media only screen and (max-width:1181px){
+    .AddModelData .modelInfoWrapper .inputWrapper{
+        margin: 1.3rem 0rem;
+    }
+    .AddModelData .modelInfoWrapper .btnContainer {
+        margin: 2rem 0rem;
+    
+    }
+}
+@media only screen and (max-width:761px){
+    .AddModelData .modelInfoWrapper  h1{
+       font-size: 1.6rem;
+   }
+}
+@media only screen and (max-width:657px){
+    .AddModelData .modelInfoWrapper  h1{
+       font-size: 1.5rem;
+   }
+   .AddModelData .modelInfoWrapper{
+       padding: 3rem 0.5rem;
+       padding-bottom: 7rem;
+   }
+   .AddModelData .modelInfoWrapper .inputWrapper input,
+    .AddModelData .modelInfoWrapper .inputWrapper select,
+    .AddModelData .modelInfoWrapper  .myui-button,
+    .AddModelData .modelInfoWrapper .btnContainer button{
+        padding:0.6rem 0.5rem;
+    }
+}
+@media only screen and (max-width:633px){
+    .AddModelData{
+        display: block;
+    }
+    .AddModelData .modelWrapper{
+        width: 100vw;
+        height: 70vh;
+    }
+    .AddModelData .modelInfoWrapper{
+        width: 100vw;
+        height: 30vh;
+        padding: 3rem 1.5rem;
+        padding-bottom: 5rem;
+    }
+}

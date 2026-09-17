@@ -1,0 +1,160 @@
+.AddUser {
+
+}
+.AddUser .menuWrapper{
+    margin-left: 1rem;
+    visibility: hidden;
+}
+.AddUser .menu{
+    width: 1.7rem;
+    height: 1.7rem;
+ }
+.AddUser .darkModeMenu{
+    width: 1.4rem;
+    height: 1.4rem;
+ }
+.AddUser  .loginContainer{
+    width: 33rem;
+    border-radius: 20px;
+    padding: 1.5rem ;
+    padding-bottom: 0.8rem;
+    background-color: white;
+    margin: auto;
+    /* margin-top: 3rem; */
+    box-shadow: 0px 4px 4px 0 #00000026;
+    border: 1px solid #0000000D;
+    margin-bottom: 2rem;
+}
+.AddUser .Login .loginContainer{
+    padding: 1rem 1.5rem;
+    padding-bottom: 0.4rem;
+}
+.Login .loginContainer .emailContainer input,
+.Login .loginContainer .passwordContainer input{
+    padding:0.6rem 0.5rem;
+    margin: 0.4rem 0rem;
+}
+.AddUser .Login .loginContainer .emailContainer select{
+
+}
+
+.AddUser .Login .loginContainer .emailContainer,
+.AddUser .Login .loginContainer .passwordContainer{
+    margin: 1.2rem 0rem;
+}
+.AddUser .backBtnWrapper{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+}
+.AddUser .backBtnWrapper .back{
+    margin-top: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.2rem;
+}
+.AddUser .Login .loginContainer .passwordContainer input{
+    width: 90%;
+    display: block;
+    padding:0.6rem 0.5rem;
+    font-size: 1rem;
+    margin: 0rem;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+/* dark mode */
+.darkModeContainer .AddUser  .loginContainer{
+    border: 1px solid #525151;
+    background-color: #373333;  
+}
+.darkModeContainer .AddUser  .loginContainer input,
+.darkModeContainer .AddUser .loginContainer .passwordContainer .flex{
+    background-color: #131313;
+    color: white;
+    border: 1px solid #525151;
+}
+@media only screen and (max-width:844px){
+    .AddUser .Login .loginContainer{
+        width: 55%;
+    }
+}
+@media only screen and (max-width:882px){
+    .AddUser .menuWrapper{
+        visibility: visible;
+    }
+}
+@media only screen and (max-width:698px){
+    .AddUser .Login .loginContainer{
+        width: 62%;
+    }
+}
+
+@media only screen and (max-width:608px){
+    .AddUser .Login .loginContainer{
+        width: 68%;
+    }
+}
+@media only screen and (max-width:538px){
+    .AddUser .Login .loginContainer{
+        width: 75%;
+        border-radius: 0.8rem;
+    }
+}
+@media only screen and (max-height:468px){
+    .AddUser .Login .loginContainer{
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width:447px){
+    .AddUser .Login .loginContainer{
+        width: 85%;
+    }
+    .AddUser .Login .loginContainer .heading h1{
+        font-size:1.7rem;
+    }
+    .AddUser .Login .loginContainer .emailContainer,
+    .Login .loginContainer .passwordContainer{
+        margin-bottom: 0.8rem;
+    }
+}
+@media only screen and (max-width:402px){
+    .AddUser .Login .loginContainer{
+        padding:0.6rem 1rem;
+        padding-bottom: 0.4rem;
+    }
+    .AddUser .Login .loginContainer .heading h1{
+        margin-bottom: 0.1rem;
+    }
+    .Login .loginContainer .heading{
+        margin-bottom: 1.5rem;
+    }
+}
+@media only screen and (max-width:392px){
+    .AddUser .Login .loginContainer{
+        width: 90%;
+        padding:0.6rem;
+        padding-bottom: 0.4rem;
+    }
+}
+@media only screen and (max-height:372px){
+    .AddUser .Login .loginContainer{
+        margin-top: 8rem;
+    }
+}
+@media only screen and (max-width:370px){
+    .AddUser .Login .loginContainer{
+        width: 94%;
+    }
+    .loginContainer .heading p{
+        font-size: 0.95rem;
+    }
+}
+@media only screen and (max-width:344px){
+    .Login .loginContainer .btnContainer {
+        margin: 0.9rem 0rem;
+}
+}

@@ -1,0 +1,169 @@
+.AddModel{
+    padding: 0rem;
+}
+/* main */
+.AddModel main h1{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.AddModel main .Wrapper{
+    width: 70%;
+    margin: auto;
+}
+.AddModel main .Wrapper .textInput input{
+    width: 100%;
+    display: block;
+    padding:1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid #acaaaa;
+    margin: 2rem 0rem;
+    background: rgb(241, 238, 238);
+}
+.AddModel main .Wrapper .fileContainer{
+    width: 100%;
+    border: 3px dashed   #acaaaa;
+    border-radius: 1.1rem;
+    background: rgb(241, 238, 238);
+    text-align: center;
+    padding: 2rem 0rem;
+    margin: 2rem 0rem;
+}
+.AddModel main .Wrapper .fileContainer .img{
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    margin-bottom: 1.4rem;
+}
+.AddModel main .Wrapper .fileContainer .info p{
+    color: #A9ACB4;
+    margin-bottom: 1.7rem;
+}
+.AddModel main .Wrapper .btnContainer button{
+    border: none;
+    outline: none;
+   border-radius: 1.4rem;
+   font-weight: bolder;
+   font-size: 1.1rem;
+   cursor: pointer;
+   padding: 1rem;
+   width: 100%;
+   color: white;
+    background:black;
+    margin-bottom: 5rem;
+}
+.AddModel main .Wrapper .fileContainer .info h3{
+    color: #292D32;
+    margin-bottom: 0.7rem;
+}
+#fileupload input,
+#fileupload2 input{
+    opacity: 0.0; 
+     width: 1rem;
+    cursor: pointer;
+}
+.myui-button
+{
+    border: 1px solid   #DCDADA;
+    padding:0.5rem 2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background: rgb(252, 248, 248);
+}
+/* dark mode styling */
+.darkModeContainer .AddModel main .Wrapper .textInput input,
+.darkModeContainer .AddModel main .Wrapper .fileContainer{
+    background-color: #373333;  
+    color: white;
+}
+.darkModeContainer .myui-button{
+    background-color: #131313;
+    /* background-color: #373333; */
+    color: white;
+    border: 1px solid rgb(103, 100, 100);
+}
+.darkModeContainer .AddModel main .Wrapper .fileContainer .info h3{
+    color: white;
+}
+@media only screen and (max-width:882px){
+    .AddModel nav .menu{
+        visibility: visible;
+    }
+}
+@media only screen and (max-width:796px){
+    .AddModel main .Wrapper{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:576px){
+    .AddModel main .Wrapper{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:480px){
+    .AddModel main .Wrapper{
+        width: 100%;
+        margin: auto;
+    }
+    .AddModel{
+        padding: 1rem;
+    }
+    .AddModel main .Wrapper .textInput input{
+        padding:0.8rem 1rem;
+        margin: 1.5rem 0rem;
+    }
+    .AddModel main .Wrapper .fileContainer{
+        padding: 1.7rem 0rem;
+        margin: 1.5rem 0rem;
+    }
+    .AddModel main .Wrapper .fileContainer .img{
+        margin: auto;
+        margin-bottom: 1rem;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .AddModel main .Wrapper .btnContainer button{
+        padding:0.8rem 0.5rem;
+        margin-bottom: 4rem;
+    }
+}
+@media only screen and (max-width:393px){
+    .AddModel main .Wrapper .fileContainer{
+        padding: 1rem 0rem;
+    }
+    .AddModel main .Wrapper .fileContainer .img{
+        margin: auto;
+        margin-bottom: 0.6rem;
+    }
+    .AddModel main .Wrapper .fileContainer .info p{
+        margin-bottom: 1.7rem;
+        font-size: 0.92rem;
+    }
+    .AddModel main .Wrapper .fileContainer .info h3{
+        margin-bottom: 0.5rem;
+    }
+    #fileupload input,
+    #fileupload2 input{
+        margin-bottom: 0.2rem;
+
+    }
+    .myui-button
+    {
+        padding:0.3rem 1rem;
+    }
+
+}
+@media only screen and (max-width:361px){
+    .AddModel main .Wrapper .fileContainer .info p{
+        margin-bottom: 1.4rem;
+        font-size: 0.85rem;
+    }
+    .AddModel main .Wrapper .fileContainer .info h3{
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+}

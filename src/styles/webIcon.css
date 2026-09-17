@@ -1,0 +1,64 @@
+/* Base icon variables */
+:root {
+	--web-icon-size: 24px;
+	--web-icon-size-small: 20px;
+	--web-icon-size-large: 24px;
+}
+
+/* Default web icon styles */
+.web-icon {
+	width: var(--web-icon-size);
+	height: var(--web-icon-size);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Size variants */
+.web-icon-small {
+	width: var(--web-icon-size-small);
+	height: var(--web-icon-size-small);
+}
+
+.web-icon-large {
+	width: var(--web-icon-size-large);
+	height: var(--web-icon-size-large);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+	:root {
+		--web-icon-size: 20px;
+		--web-icon-size-small: 16px;
+		--web-icon-size-large: 24px;
+	}
+}
+
+/* Dark mode: force public SVGs (rendered via <img>) to white */
+.dark .web-icon,
+.dark .web-icon-small,
+.dark .web-icon-large {
+	filter: brightness(0) invert(1);
+}
+
+/* Opt-out in dark mode to keep original colors */
+.dark .web-icon.no-dark-white,
+.dark .web-icon-small.no-dark-white,
+.dark .web-icon-large.no-dark-white {
+	filter: none;
+}
+
+/* Accent color for WebIcon */
+.web-icon-accent,
+.web-icon-small.web-icon-accent,
+.web-icon-large.web-icon-accent {
+	filter: brightness(0) saturate(100%) invert(35%) sepia(84%) saturate(1200%)
+		hue-rotate(305deg) brightness(95%) contrast(95%);
+}
+
+/* White color for WebIcon */
+.web-icon-white,
+.web-icon-small.web-icon-white,
+.web-icon-large.web-icon-white {
+	filter: brightness(0) invert(1);
+}
