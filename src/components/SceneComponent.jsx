@@ -33,6 +33,7 @@ import { dispatchSelectedMesh } from "../redux/actions/meshActions";
 import { useControls, Leva } from "leva";
 import { memoize } from "proxy-memoize";
 import { customFetch, formatDate, formatTime, getRealFileUrl } from "../utils";
+import { getObjectRef } from "../utils/objectRef";
 import { useLocation } from "react-router-dom";
 import { getUserFromLocalStorage } from "@/redux/reducers/userReducer";
 
@@ -498,22 +499,32 @@ export const onSceneReady = (scene, dispatch) => {
 				// }
 
 				if (pickResult.pickedMesh) {
-					dispatch(
-						dispatchSelectedMesh(
-							JSON.stringify({
-								tagPosition: extractPositionCoordinates(
-									currTagPos || pointCoordinates
-								),
-								meshName: pickResult.pickedMesh?.name || "no name",
-								cameraPosition:
-									extractPositionCoordinates(currCameraPosition),
-								cameraDirection:
-									extractPositionCoordinates(currCameraDirection),
-								cameraRotation: extractPositionCoordinates(
-									currentCameraRotation
-								),
-							})
-						)
+					// objectRef contract - see /docs/object-ref-contract.md.
+					// meshName alone cannot tell two machines apart (the 3D
+					// software can give them the same name), so we also compute
+					// a stable objectId from the mesh's path/vertex count/material.
+					getObjectRef(pickResult.pickedMesh, scene).then(
+						({ objectId, objectPath }) => {
+							dispatch(
+								dispatchSelectedMesh(
+									JSON.stringify({
+										tagPosition: extractPositionCoordinates(
+											currTagPos || pointCoordinates
+										),
+										meshName: pickResult.pickedMesh?.name || "no name",
+										objectId,
+										objectPath,
+										cameraPosition:
+											extractPositionCoordinates(currCameraPosition),
+										cameraDirection:
+											extractPositionCoordinates(currCameraDirection),
+										cameraRotation: extractPositionCoordinates(
+											currentCameraRotation
+										),
+									})
+								)
+							);
+						}
 					);
 				}
 			}
