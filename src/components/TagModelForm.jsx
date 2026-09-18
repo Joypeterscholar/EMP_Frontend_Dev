@@ -230,10 +230,20 @@ const TagModelForm = ({
 
 		setIsSubmitting(true);
 		try {
+			// objectRef contract - see /docs/object-ref-contract.md. objectId and
+			// objectPath were computed in SceneComponent when the mesh was picked
+			// and travel here inside the taggedInfo JSON blob.
+			const { objectId, objectPath, meshName } = newTaggedInfo
+				? JSON.parse(newTaggedInfo)
+				: {};
+
 			const formDataForUpload = new FormData();
 			formDataForUpload.append("fullname", formData.fullname);
 			formDataForUpload.append("incident", formData.incident);
 			formDataForUpload.append("objectName", newTaggedInfoName);
+			formDataForUpload.append("objectId", objectId || "");
+			formDataForUpload.append("objectPath", objectPath || "");
+			formDataForUpload.append("meshName", meshName || "");
 			formDataForUpload.append("type", formData.type);
 			formDataForUpload.append("evidence", formData.evidence);
 			formDataForUpload.append("action", formData.action);
